@@ -27,7 +27,7 @@ export const useAppStore = defineStore({
                 nom: "La Prière D'une Épouse Est Efficace",
             categorie: "roman",
             auteur :"Stormie Omartian" ,
-              src: "/images/im1.jpg",
+              src: "/images/3.jpg",
               prix : "450 FCFA",
             detail : "Les défis et les pressions d'aujourd'hui peuvent faire penser qu'un mariage heureux et épanoui est un rêve, voir un mythe. C'est sans compter sur la puissance de la prière. Au travers de son vécu personnel, l'auteur explique à l'épouse comment prier pour chaque besoin spécifique de son mari."          
         
@@ -36,7 +36,7 @@ export const useAppStore = defineStore({
             id:3,
             categorie: "roman",
             auteur :"Gary Chapman" ,
-              src: "/images/im1.jpg",
+              src: "/images/2.jpg",
               prix : "200 FCFA",
             detail : "Dans Les langages de l’amour, Gary Chapman aidait de nombreux conjoints à vivre une relation plus enrichissante en leur montrant comment parler le langage de l’autre. Dans Langages d’amour des enfants, Chapman fait équipe avec Ross Campbell, l’auteur de Comment vraiment aimer votre enfant, pour aider les parents à parler le langage d’amour de leurs enfants.Vous pouvez apprendre à parler couramment le langage d’amour de votre enfant !"       
            
@@ -45,7 +45,7 @@ export const useAppStore = defineStore({
             id:4,
             categorie: "roman",
             auteur :"Monique de Hadjetlaché" ,
-              src: "/images/im1.jpg",
+              src: "/images/4.jpg",
               prix : "100 FCFA",
             detail : "Monique de Hadjetlaché explique dans ce livre comment l'on devient mère, du désir de l'enfant à son éducation. À l'aide de récits tirés de son expérience de thérapeute, de mère, ainsi qu'au travers de personnages bibliques, elle évoque les joies et les difficultés de ce beau parcours. Chaque femme possède des ressources qui lui permettront, non d'être une mère parfaite, mais d'être simplement mère, en tirant le meilleur parti de son passé, son contexte familial, psychologique, sociologique, et malgré les difficultés qui se présenteront inévitablement. "        
             },
@@ -53,7 +53,7 @@ export const useAppStore = defineStore({
             id:5,
             categorie: "roman",
             auteur :"Sminth" ,
-              src: "/images/im1.jpg",
+              src: "/images/5.jpg",
               prix : "300 FCFA",
             detail : "Le temps étant un don du Seigneur, l’auteur est convaincu que son utilisation correcte ne peut pas être séparée de la connaissance profonde de Dieu et de ses volontés. L’utilisation décente du temps passe par une rigoureuse planification de celui-ci à travers l’élaboration d’un emploi de temps qui consacre les meilleures heures aux choses prioritaires de la vie, conformément à la révélation de Dieu et de l’œuvre que le Seigneur nous confie."        
             },
@@ -69,7 +69,7 @@ export const useAppStore = defineStore({
             categorie: "roman",
             id:7,
             auteur :"Stormie Omartian" ,
-              src: "/images/im1.jpg",
+              src: "/images/3.jpg",
               prix : "100 FCFA",
             detail : "Les défis et les pressions d'aujourd'hui peuvent faire penser qu'un mariage heureux et épanoui est un rêve, voir un mythe. C'est sans compter sur la puissance de la prière. Au travers de son vécu personnel, l'auteur explique à l'épouse comment prier pour chaque besoin spécifique de son mari."          
         
@@ -78,7 +78,7 @@ export const useAppStore = defineStore({
             categorie: "roman",
             id:8,
             auteur :"Gary Chapman" ,
-              src: "/images/im1.jpg",
+              src: "/images/2.jpg",
               prix : "150 FCFA",
             detail : "Dans Les langages de l’amour, Gary Chapman aidait de nombreux conjoints à vivre une relation plus enrichissante en leur montrant comment parler le langage de l’autre. Dans Langages d’amour des enfants, Chapman fait équipe avec Ross Campbell, l’auteur de Comment vraiment aimer votre enfant, pour aider les parents à parler le langage d’amour de leurs enfants.Vous pouvez apprendre à parler couramment le langage d’amour de votre enfant !"       
            
@@ -87,7 +87,7 @@ export const useAppStore = defineStore({
             categorie: "roman",
             id:9,
             auteur :"Monique de Hadjetlaché" ,
-              src: "/images/im1.jpg",
+              src: "/images/4.jpg",
               prix : "100 FCFA",
             detail : "Monique de Hadjetlaché explique dans ce livre comment l'on devient mère, du désir de l'enfant à son éducation. À l'aide de récits tirés de son expérience de thérapeute, de mère, ainsi qu'au travers de personnages bibliques, elle évoque les joies et les difficultés de ce beau parcours. Chaque femme possède des ressources qui lui permettront, non d'être une mère parfaite, mais d'être simplement mère, en tirant le meilleur parti de son passé, son contexte familial, psychologique, sociologique, et malgré les difficultés qui se présenteront inévitablement. "        
             },
@@ -95,7 +95,7 @@ export const useAppStore = defineStore({
             categorie: "roman",
             id:10,
             auteur :"Sminth" ,
-              src: "/images/im1.jpg",
+              src: "/images/5.jpg",
               prix : "600 FCFA",
             detail : "Le temps étant un don du Seigneur, l’auteur est convaincu que son utilisation correcte ne peut pas être séparée de la connaissance profonde de Dieu et de ses volontés. L’utilisation décente du temps passe par une rigoureuse planification de celui-ci à travers l’élaboration d’un emploi de temps qui consacre les meilleures heures aux choses prioritaires de la vie, conformément à la révélation de Dieu et de l’œuvre que le Seigneur nous confie."        
             },
