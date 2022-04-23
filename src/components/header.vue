@@ -14,8 +14,7 @@
         <!-- logo -->
         <div class="col-4 col-lg-3 mt-1 order-1">
           <a href="#" class="logo">
-            
-            <img src="assets/images/logo.png"
+            <img src="/assets/images/logo.png"
                  onclick="window.location.href='/'"
                  class="img-fluid order-1 order-lg-0" alt="">
             <span class="order-0 order-lg-1" id="open-menu"><i class="fas fa-bars"></i></span>
@@ -53,17 +52,23 @@
                 tag="li"
                 :to="{ name: 'apropos' }"
               >
-                <a href="#" class="btn-card">
+                <a class="btn-card">
                   A propos de
                 </a>
               </router-link>
 
               </li>
               <li class="col">
+                <router-link
+                tag="li"
+                :to="{ name: 'panier' }"
+              >
                 <a href="#" class="btn-card">
                   <i class="bi bi-cart"></i>
-                  <span class="total">5</span>
+                  <span class="total">{{panier.length??0}}</span>
                 </a>
+              </router-link>
+
               </li>
             </ul>
           </div>
@@ -73,7 +78,17 @@
   </div>
 </template>
 <script lang="ts">
-import {defineComponent} from "vue";
+import { useAppStore } from "@/store/module/app";
+import {computed, defineComponent} from "vue";
 
-export default defineComponent({});
+export default defineComponent({
+  setup(){
+    const appStore = useAppStore();
+  const panier = computed(() => appStore.getPanier);
+
+  return {
+    panier
+  }
+  }
+});
 </script>

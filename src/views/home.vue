@@ -67,8 +67,9 @@
     <div class="row col-lg-none ">
       <div v-for="p in produits" :key="p.id" class="col-6 col-lg-3">
         <div class="card_product">
+     
           <div class="top"
-               style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/513wLys2kVL._SX403_BO1,204,203,200_.jpg')">
+               :style="'background-image: url(/assets'+p.src+')'">
             <span class="flag"> New</span>
           </div>
           <div class="bottom text-center">
@@ -79,15 +80,38 @@
               <span class="current-price">{{ p.prix }} FCFA</span>
               <span class="old-price">100 FCFA</span>
             </div>
-            <router-link to="#">
+            
               <button @click="addPanier(p)">Ajouter au panier</button>
-            </router-link>
+            
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="mt-5 mb-5 bg-gradient">
+    <div class="container">
+      <div class="row mb-2">
+        <h5 class="text-center">Ils nous font confiance</h5>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3 col-md-2">
+          <img src="https://imgur.com/WxqeWOL.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-3 col-md-2">
+          <img src="https://logos-marques.com/wp-content/uploads/2021/03/Amazon-logo.png" alt=""
+               class="img-fluid">
+        </div>
+        <div class="col-3 col-md-2">
+          <img src="https://upload.wikimedia.org/wikipedia/fr/f/fb/Logo_-_La_Poste_de_C%C3%B4te_d%27Ivoire.png"
+               alt="" class="img-fluid">
+        </div>
+        <div class="col-3 col-md-2">
+          <img src="https://upload.wikimedia.org/wikipedia/fr/3/39/Colissimo_Logo.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
