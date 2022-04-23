@@ -10,9 +10,12 @@
         <!-- {{panier}} -->
         <div v-for="(p,i) in panier" :key="p.id">
           <p>
-         titre : {{p.nom}} <br>
+         titre : {{p.nom_prod}} <br>
           prix : {{p.prix}} <br>
+          qte : {{p.qte}} <br>
           <!-- detail : {{p.detail}} <br> -->
+          <button @click="changeQte(i,p.qte+1)">+</button>
+          <button @click="changeQte(i,p.qte-1)">-</button> <br>
           <button @click="remove(i)">supprimer du panier</button>
         </p>
         </div>
@@ -42,6 +45,13 @@ export default defineComponent({
   
   function remove(i:any){
     appStore.removePanier(i);
+  }
+  function changeQte(i:any,qte:any){
+    if(qte==0) remove(i)
+    else{
+      appStore.changeQte(i,qte);
+    //console.log(appStore.getSommeTotal())
+    }
   }
   
   function achat(){
@@ -100,7 +110,7 @@ export default defineComponent({
 */
      })
   return {
-    achat,panier,remove
+    achat,panier,remove,changeQte
   }
   
   },

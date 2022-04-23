@@ -5,7 +5,6 @@ interface AppState {
     pageLoading: boolean,
     produits: Array<any>,
     panier: Array<any>,
-
 }
 
 export const useAppStore = defineStore({
@@ -125,6 +124,18 @@ export const useAppStore = defineStore({
         removePanier(index:any):void{
             this.panier.splice(index, 1);
         },
+        changeQte(index:any,qte:any){
+          // console.log(this.panier.at(index))
+          this.panier.at(index).qte=qte;
+        },
+        getSommeTotal():any{
+          var somme=0;
+          this.panier.forEach(el => {
+            // console.log(parseInt(el.prix)*parseInt(el.qte))
+            somme+= parseInt(el.prix)*parseInt(el.qte)
+          });
+          return somme;
+        }
     }
 })
 
