@@ -14,7 +14,8 @@
         <!-- logo -->
         <div class="col-4 col-lg-3 mt-1 order-1">
           <a href="#" class="logo">
-            <img src="./assets/images/logo.png"
+            
+            <img src="assets/images/logo.png"
                  onclick="window.location.href='/'"
                  class="img-fluid order-1 order-lg-0" alt="">
             <span class="order-0 order-lg-1" id="open-menu"><i class="fas fa-bars"></i></span>
@@ -39,12 +40,24 @@
           <div class="d-inline-flex">
             <ul class="d-flex align-items-center">
               <li>
-                <a href="#">Accueil</a>
+                <router-link
+                tag="li"
+                :to="{ name: 'home' }"
+              >
+                <a >Accueil</a>
+              </router-link>
+                
               </li>
               <li>
+                <router-link
+                tag="li"
+                :to="{ name: 'apropos' }"
+              >
                 <a href="#" class="btn-card">
                   A propos de
                 </a>
+              </router-link>
+
               </li>
               <li class="col">
                 <a href="#" class="btn-card">
