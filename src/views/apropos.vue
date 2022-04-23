@@ -1,62 +1,103 @@
 <template>
-  <!-- jumbotron -->
-  <div class="jumbotron">
-    <div class="row h-100">
-      <img src="assets/images/DSC_0288.JPG" alt="">
-      <div class="introduction">
-        <h1 class="display-2">A propos de nous</h1>
-      </div>
-    </div>
-  </div>
+ 
 
 
-  <!-- Section-->
-  <section class="mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="fw-light">
-            Au centre de Paris, une université scientifique pluridisciplinaire vous propose une formation,
-            faisant partie du réseau MIAGE, avec des enseignements de qualité et une excellence reconnue.
+    <!-- Core theme CSS (includes Bootstrap)-->
 
-            Le master MIAGE est à vocation professionnelle et fait partie du réseau des MIAGE de France. Il
-            allie une double compétence en informatique et en gestion.
-          </p>
+
+    <div class="home-page">
+    <link href="/styles.css" rel="stylesheet" />
+       
+        <div  id="bg-image">
+            
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h1>Atouts et points forts</h1>
-          <h2 class="fw-light">Trois types de formations sont proposés à l’UFR :</h2>
-          <ul>
-            <li> Formation en apprentissage (FA)</li>
-            <li> Formation initiale et continue (FIC)</li>
-          </ul>
+        <div id="home-content">
+            <!-- <a class="btn m-2" aria-current="page" href="/">
+                <i class="bi bi-arrow-left-square"></i> retour a la boutique
+            </a> -->
+            <div class="" style="padding: 55px 25px;">
+                
 
-          <p class="fw-light">
-            Le centre de formation en apprentissage (CFA), et l’association pour la formation d’Informaticiens
-            par
-            apprentissage (AFIA) nous accompagne dans la FA, d’une part dans la recherche d’entreprises pouvant
-            accueillir nos étudiants et d’autre part dans le suivi des apprentis dans leurs missions. Le taux
-            d’insertion est de 100%. <br>
+                <h1 >MIAGE-GI FHB </h1>
+                <p>
+                    L’université Félix Houphouët-Boigny est une université ivoirienne, située dans la commune de Cocody.
+                    elle possede en son sein plusieurs facultés dont la faculté dont l'UFR Mathématiques & Informatiques.
+                    Pour mieux repondre aux besoins des entreprises, elle decide de creer des filieres professionnelles. elles cree ainsi le Parcours MIAGE et ACTUARIAT. <br>
+                    <a href="https://univ-fhb.edu.ci/" class="btn btn-outline-dark mt-2">EN SAVOIR PLUS </a>
+                </p>
+                <br>
 
-            Le service commun de formation continue (SCFC) de notre université est chargé d’organiser, de
-            coordonner
-            et
-            de gérer les contrats de professionnalisation et la validations d’acquis et de l’expérience (VAE)
-            pour
-            la
-            formation continue. <br>
 
-            ​Le master fait intervenir des enseignants-chercheurs, aussi bien en informatique du laboratoire
-            d’informatique de paris Descartes (LIPADE) qu’en gestion du laboratoire interdisciplinaire de
-            recherche
-            appliquée en économie de la santé (LIRAES) et de nombreux experts professionnels extérieurs.
-          </p>
+                <h3>Nos filieres</h3>
+                <div class="row gx-4 gx-lg-1 row-cols-md-3 ">
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                              <img
+                                class="card-img-top"
+                                src="/assets/miage.jpg"
+                                alt="..."
+                              />
+                              <!-- Product details-->
+                              <div class="card-body p-2">
+                                <div class="">
+                                  <h6 class="fw-bolder">MIAGE</h6>
+                                  Méthodes Informatiques Appliquées à la Gestion des Entreprises.
+                                  
+                                  <br><a class="btn btn-light " href="#">En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col mb-5">
+                            <div class="card h-100">
+                              <img
+                                class="card-img-top"
+                                src="assets/actuariat.jpg"
+                                alt="..."
+                              />
+                              <!-- Product details-->
+                              <div class="card-body p-2">
+                                <div class="">
+                                  <h6 class="fw-bolder">ACTUARIAT</h6>
+                                  Forme aux metiers de l' assurance.
+                                  <br><a class="btn btn-light" href="#">En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                </div>
+                
+                <br>
+                <h3>Admissions</h3>
+                <p>
+                   Apres l' obtention du baccalaureat ou d'un diplome de niveau Bac + 2 (Licence 2, DUT, BTS), l'admission en Licence MIAGE est prononcée par une commission de recrutement après examen d’un dossier et entretien éventuel.
+                </p>
+
+                
+                
+
+    
+            </div>
+            
+    
+    
         </div>
-      </div>
+    
     </div>
-  </section>
+
+
+  
+    <!-- Section-->
+    <section class="py-5">
+      <div class="container">
+        
+      </div>
+    </section>
+    <!-- Footer-->
+
+
+
 </template>
 
 <script lang="ts">

@@ -5,7 +5,45 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+.home-page{
+  position: relative;
+  /* top: 0;bottom: 0;
+  right: 0;left: 0; */
 
+  background: #fff;
+  z-index: 500;
+
+}
+#side-menu{
+  position: relative;
+  left: 0;top: 0;bottom: 0;
+  width: 20%;
+  overflow-y: hidden;
+  z-index: 0;
+}
+#bg-image{
+  position: absolute;
+  /* left: 0;top: 0;bottom: 0; */
+  width: 30%;
+  z-index: 35555;
+  overflow: hidden;
+  background-image: url("assets/bg.jpg");
+  background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; 
+height: 100%;
+
+}
+#home-content{
+  position: relative;
+  left: 30%;top: 0;bottom: 0;
+  width: 70%;
+  overflow-y: scroll;
+  z-index: 10;
+}
+.carousel-inner img {
+  width: 100%;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

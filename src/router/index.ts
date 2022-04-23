@@ -25,6 +25,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/panier.vue'),
     meta: {layout: 'default-layout'}
   },
+  { path: '/article/:id', 
+  name: 'article',
+  component: () => import('@/views/article.vue'),
+},
   {
     path: '/succes',
     name: 'succes',
