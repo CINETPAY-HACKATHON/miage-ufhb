@@ -135,6 +135,15 @@ export const useAppStore = defineStore({
             somme+= parseInt(el.prix)*parseInt(el.qte)
           });
           return somme;
+        },
+        verif(id:any):any{
+          this.panier.forEach(el => {
+            console.log(typeof parseInt(el.id_prod))
+            console.log(parseInt(id))
+           
+            if(parseInt(el.id_prod)===parseInt(id)) return true
+          });
+          return false
         }
     }
 })

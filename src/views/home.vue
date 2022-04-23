@@ -127,15 +127,19 @@ export default defineComponent({
     const produits = computed(() => appStore.getProduits);
 
     function addPanier(p: Object) {
-      console.log(p);
-      var info = {
+      // console.log(appStore.verif(p.id));
+      // if(appStore.verif(p.id)) alert('error', 'produit est déja dans le panier !');
+      // else{
+ var info = {
         id_prod: p.id,
         nom_prod: p.nom,
         prix: p.prix,
         qte: 1
       };
       appStore.addPanier(info);
-      alert('succes', 'produit bien ajouté au panier !');
+      alert('succesS', 'produit bien ajouté au panier !');
+      
+     
     }
 
     function alert(type: any, msg: any) {
