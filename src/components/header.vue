@@ -14,7 +14,7 @@
         <!-- logo -->
         <div class="col-4 col-lg-3 mt-1 order-1">
           <a href="#" class="logo">
-            <img src="./assets/images/logo.png"
+            <img src="/assets/images/logo.png"
                  onclick="window.location.href='/'"
                  class="img-fluid order-1 order-lg-0" alt="">
             <span class="order-0 order-lg-1" id="open-menu"><i class="fas fa-bars"></i></span>

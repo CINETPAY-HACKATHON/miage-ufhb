@@ -1,4 +1,169 @@
 <template>
+  <section class="section-content d-none d-lg-block bg padding-y border-top">
+    <div class="container" style=" margin-top:80px;">
+      <center>
+        <p class="h3" style="color: #888;font-weight:bold;">VOTRE PANIER </p>
+      </center>
+      <br>
+      <div class="row">
+        <main class="col-sm-9">
+
+          <div class="card">
+            <table class="table table-hover shopping-cart-wrap">
+              <thead class="text-muted">
+              <tr>
+                <th scope="col" width="2"></th>
+
+                <th scope="col" width="100">IMAGE</th>
+                <th scope="col" width="150">PRODUIT</th>
+                <th scope="col" width="150">PRIX</th>
+                <th scope="col" width="80">QUANTITE</th>
+                <th scope="col" width="150" class="text-right">TOTAL</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr v-for="(p,i) in panier" :key="p.id">
+                <td class="text-right">
+
+                  <form style="border:none" class=" mt-3"
+                        action="#" method="POST">
+                    <input name="produit_id" type="hidden"
+                           value="">
+                    <button type="submit" class="btn btn-outline-danger">×</button>
+                  </form>
+                </td>
+                <td>
+                  <div class="img-wrap"><img src=""
+                                             class="img-thumbnail img-sm" width="100"></div>
+                </td>
+
+                <td>
+                  <h6 class="title text-truncate mt-4" style="font-size: 20px;">
+                    {{p.nom_prod}}
+                  </h6>
+                </td>
+                <td>
+                  <div class="price-wrap mt-4">
+                    <p class="price" style="color:black;font-weight:bold ">
+                      {{p.prix}} FCFA</P>
+
+                  </div>
+                </td>
+                <td>
+
+                  <input type="hidden" id="max_qty" name="max_qty"
+                         value="0">
+                  <div class="mt-3 border rounded-pill w-xl-80 px-3 border-color-1"
+                       style="width: 150px">
+                    <div class="js-quantity row align-items-center">
+                      <div class="col">
+                        <input name="qty" id="qty" data-id="0"
+                               style="background-color:transparent"
+                               class="js-result form-control h-auto border-0 rounded p-0 shadow-none"
+                               type="text" value="0">
+
+                      </div>
+                      <div class="col-auto">
+                        <a class="js-minus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0"
+                           href="#">
+                          <small class="fas fa-minus btn-icon__inner"></small>
+                        </a>
+
+                        <a class="js-plus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0"
+                           href="#">
+                          <small class="fas fa-plus btn-icon__inner"></small>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </td>
+                <td>
+                  <div class="price-wrap mt-4">
+
+                    <p class="price text-right"
+                       style="color:black;font-weight:bold ">1000
+                      FCFA</p>
+
+                  </div> <!-- price-wrap .// -->
+                </td>
+
+              </tr>
+
+              </tbody>
+            </table>
+            <div class="card-body border-top">
+              <a href="#" class="btn btn-light float-md-right"
+                 style="font-weight:bold;font-size:18px"> Finaliser la commande &nbsp;<i
+                  class="fa fa-chevron-right" style="color: #002687"></i> </a>
+              <a href="#" class="btn btn-light"
+                 style="font-weight:bold;font-size:18px"> <i class="fa fa-chevron-left"
+                                                             style="color: #002687"></i> &nbsp;Continuer
+                ses achats </a>
+            </div>
+          </div> <!-- card.// -->
+          <div class="alert alert-success mt-3 p-1 pl-5 ">
+            <p class="icontext" style="font-weight: bold"><i class="icon text-success fa fa-truck"></i>&nbsp;Livraison
+              gratuite & rapide</p>
+          </div>
+        </main> <!-- col.// -->
+        <aside class="col-md-3">
+
+          <div class="card">
+            <div class="card-body">
+              <dl class="row row-cols-2">
+                <dt class="text-left">SOUS TOTAL :</dt>
+                <dd class="text-right"
+                    style="width:55%;margin-left:-20px;font-weight:bold;color: #000">
+                  Fcfa
+                </dd>
+              </dl>
+
+              <dl class="row row-cols-2 dlist-align">
+                <dt class="text-left">TOTAL :</dt>
+                <dd class="text-right"
+                    style="width:55%;margin-left:-20px;font-weight:bold;color: red">
+                  Fcfa
+                </dd>
+              </dl>
+
+              <hr>
+
+
+            </div> <!-- card-body.// -->
+          </div>  <!-- card .// -->
+        </aside>
+      </div>
+
+    </div> <!-- container .//  -->
+  </section>
+  <hr>
+  <section class="mb-4 d-lg-none">
+
+    <div class="mt-3 col-sm-12" style="background: white">
+
+      <center style="font-size: 18px">
+        <span class="text-left" style="font-weight: bold">sous total :</span>
+        <span class="text-right" style="font-weight: bold;color:black">100</span> Fcfa
+      </center>
+
+      <center style="font-size: 18px">
+        <span class="text-left" style="font-weight: bold">Total :</span>
+        <span class="text-right" style="font-weight: bold;color:red">100</span> Fcfa
+      </center>
+
+
+      <center class="mt-2">
+        <a href="" class="btn btn-outline-dark "
+           style="font-weight:bold;font-size:18px;">
+          Finaliser la commande &nbsp;<i class="fa fa-chevron-right" style="color: red"></i> </a>
+        <a href="" class="btn btn-outline-dark mt-2"
+           style="font-weight:bold;font-size:18px;">
+          <i class="fa fa-chevron-left" style="color: red"></i> &nbsp;Continuer ses achats </a>
+      </center>
+    </div>
+  </section>
+
   <div class="container">
     <!-- section  -->
     <section class="row mb-5 pb-md-4 align-items-center">
