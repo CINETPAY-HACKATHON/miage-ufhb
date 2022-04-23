@@ -1,0 +1,133 @@
+.header {
+  padding: 0 20px 10px 20px;
+  max-height: 8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+  & .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & img {
+      max-width: 13rem;
+    }
+
+    & i {
+      font-size: 1.5rem;
+    }
+  }
+
+  & .search {
+
+    & input {
+      flex: 1 1 auto;
+      font-size: 0.938rem;
+      border: 2px solid orange;
+      text-transform: capitalize;
+      height: 2.56288rem;
+      padding: 0 0 0 20px;
+    }
+
+    & button {
+      background-color: orange;
+      height: 2.56288rem;
+      box-shadow: 0 4px 11px rgba(0, 0, 0, .2);
+      color: white;
+
+      & i {
+        color: white;
+      }
+    }
+  }
+
+  & .header-right {
+
+
+    & li {
+      list-style: none;
+      margin-left: 1rem;
+
+      & a {
+        color: black;
+        text-underline: none;
+        text-decoration: none;
+        transition: color ease 250ms;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+
+    & i {
+      font-size: 1.6rem;
+    }
+
+
+    & .btn-card {
+      position: relative;
+
+      & i {
+        position: relative;
+      }
+
+      & .total {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: black;
+        color: white;
+        border-radius: 50%;
+        height: 1.37462rem;
+        width: 1.37462rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding: 0 10px 10px 10px;
+    max-height: 10rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    /* bloc logo et menu hamburger */
+    & .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* logo de yebay */
+      & img {
+        max-width: 13rem;
+      }
+
+      /* icon hamburger */
+      & i {
+        font-size: 2rem;
+      }
+    }
+
+    & .search {
+
+      & input {
+        border-radius: 0;
+        box-shadow: 0 4px 11px rgba(0, 0, 0, .2);
+      }
+
+      & button {
+        border-radius: 0;
+
+        & i {
+          color: white;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,415 @@
+.header {
+  padding: 0 20px 10px 20px;
+  max-height: 8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo img {
+  max-width: 13rem;
+}
+.header .logo i {
+  font-size: 1.5rem;
+}
+.header .search input {
+  flex: 1 1 auto;
+  font-size: 0.938rem;
+  border: 2px solid orange;
+  text-transform: capitalize;
+  height: 2.56288rem;
+  padding: 0 0 0 20px;
+}
+.header .search button {
+  background-color: orange;
+  height: 2.56288rem;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.header .search button i {
+  color: white;
+}
+.header .header-right li {
+  list-style: none;
+  margin-left: 1rem;
+}
+.header .header-right li a {
+  color: black;
+  text-underline: none;
+  text-decoration: none;
+  transition: color ease 250ms;
+}
+.header .header-right li a:hover {
+  color: orange;
+}
+.header .header-right i {
+  font-size: 1.6rem;
+}
+.header .header-right .btn-card {
+  position: relative;
+}
+.header .header-right .btn-card i {
+  position: relative;
+}
+.header .header-right .btn-card .total {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  height: 1.37462rem;
+  width: 1.37462rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding: 0 10px 10px 10px;
+    max-height: 10rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* bloc logo et menu hamburger */
+  }
+  .header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* logo de yebay */
+    /* icon hamburger */
+  }
+  .header .logo img {
+    max-width: 13rem;
+  }
+  .header .logo i {
+    font-size: 2rem;
+  }
+  .header .search input {
+    border-radius: 0;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+  }
+  .header .search button {
+    border-radius: 0;
+  }
+  .header .search button i {
+    color: white;
+  }
+}
+.product #product-imgs .product-preview img {
+  width: 100%;
+}
+.product #product-imgs .product-preview {
+  margin: 0 5px;
+  border: 1px solid #E4E7ED;
+}
+.product #product-imgs .slick-prev {
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.product #product-imgs .slick-next {
+  top: calc(100% - 20px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.product #product-main-img .slick-prev {
+  -webkit-transform: translateX(-15px);
+  -ms-transform: translateX(-15px);
+  transform: translateX(-15px);
+  left: 15px;
+}
+.product #product-main-img .slick-next {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+  right: 15px;
+}
+.product #product-main-img .slick-prev, .product #product-main-img #product-main-img .slick-next {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.product #product-main-img .product-preview img {
+  height: 23rem;
+}
+.product .control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  background: rgba(198, 175, 193, 0.1);
+  border: 1px solid #C6AFC1;
+  border-radius: 1px;
+  font-size: 0.75em;
+  padding: 12px;
+  text-transform: uppercase;
+}
+.product .control select {
+  font-size: 1.5rem;
+  border: none;
+  width: 50%;
+}
+
+#product-main-img:hover .slick-prev, #product-main-img:hover .slick-next {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+#product-imgs .product-preview.slick-current {
+  border-color: #D10024;
+}
+
+#product-imgs .slick-prev:before {
+  content: "\f106";
+}
+
+#product-imgs .slick-next:before {
+  content: "\f107";
+}
+
+/*----------------------------*\
+	Product details
+\*----------------------------*/
+.product-details {
+  font-family: Tahoma, sans-serif, Arial, Verdana;
+}
+.product-details .product-name {
+  font-size: 1.3rem;
+  letter-spacing: 1.3px;
+  line-height: 1.3;
+}
+.product-details .product-brand {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.3;
+}
+
+.product-details .review-link {
+  font-size: 12px;
+}
+
+.product-details .add-to-cart-btn {
+  position: relative;
+  border: 2px solid transparent;
+  height: 40px;
+  width: 100%;
+  padding: 0 30px;
+  background-color: #ef233c;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.product-details .add-to-cart-btn:hover {
+  background-color: #FFF;
+  color: #D10024;
+  border-color: #D10024;
+  padding: 0 30px 0 50px;
+}
+.product-details .add-to-cart-btn:hover > i {
+  opacity: 1;
+  visibility: visible;
+}
+.product-details .add-to-cart-btn > i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  color: #D10024;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*----------------------------*\
+	 Product detail bottom
+\*----------------------------*/
+.product-detail-bottom li {
+  font-weight: 200;
+}
+.product-detail-bottom li h6 {
+  font-weight: bold;
+}
+.product-detail-bottom li span {
+  font-weight: 600;
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .product #product-main-img .product-preview img {
+    height: 23rem;
+  }
+}
+.card_product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  margin-bottom: 3rem;
+  transition: opacity ease-out 100ms;
+}
+.card_product:hover button {
+  opacity: 1;
+}
+.card_product .top {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 5px;
+  border: 1px solid #eeeff0;
+  height: 70%;
+}
+.card_product .flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  width: 50px;
+  text-align: center;
+}
+.card_product .name {
+  color: black;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.card_product .current-price {
+  letter-spacing: 0.3px;
+  color: #c60a00;
+  font-size: 16px;
+  font-weight: 600;
+}
+.card_product .old-price {
+  letter-spacing: 0.3px;
+  color: #53585f;
+  text-decoration: line-through;
+}
+.card_product a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card_product button {
+  opacity: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: black;
+  margin-top: 0.5rem;
+  transition: all 0s 0.5s ease-in;
+  border: 1px solid black;
+}
+.card_product button:hover {
+  color: black;
+  background-color: white;
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .card_product {
+    height: 20rem;
+  }
+  .card_product .flag {
+    font-size: 0.75rem;
+  }
+  .card_product .name {
+    font-size: 0.75rem;
+  }
+  .card_product .current-price, .card_product .old-price {
+    font-size: 0.75rem;
+  }
+  .card_product button {
+    font-size: 0.75rem;
+  }
+  .card_product button:hover {
+    color: black;
+    background-color: white;
+  }
+}
+.header-home {
+  background: linear-gradient(to right, #eff8ff, #fff1dd);
+}
+.header-home ul {
+  list-style: none;
+}
+.header-home ul li {
+  position: relative;
+}
+.header-home ul li::before {
+  background-image: url("https://www.momox.fr/static/media/sprite.9af5098d.png");
+  background-repeat: no-repeat;
+  background-position: -569px -416.5px;
+  width: 23px;
+  height: 21px;
+  content: " ";
+  left: -2rem;
+  position: absolute;
+}
+.header-home .header-home-right {
+  position: relative;
+}
+.header-home .header-home-right .title-top-img {
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: absolute;
+  top: 5px;
+}
+.header-home img {
+  height: 25rem;
+}
+
+.jumbotron {
+  position: relative;
+  height: 22rem;
+  width: 100%;
+  overflow: hidden;
+}
+.jumbotron img {
+  object-fit: cover;
+  object-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+.jumbotron .introduction {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=custom.css.map */

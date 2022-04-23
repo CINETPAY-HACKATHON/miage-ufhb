@@ -1,0 +1,37 @@
+.header-home {
+  background: linear-gradient(to right, #eff8ff, #fff1dd);
+
+  & ul {
+    list-style: none;
+  }
+
+  & ul li {
+    position: relative;
+
+    &::before {
+      background-image: url("https://www.momox.fr/static/media/sprite.9af5098d.png");
+      background-repeat: no-repeat;
+      background-position: -569px -416.5px;
+      width: 23px;
+      height: 21px;
+      content: " ";
+      left: -2rem;
+      position: absolute;
+    }
+  }
+
+  & .header-home-right {
+    position: relative;
+
+    & .title-top-img {
+      font-weight: bolder;
+      text-transform: uppercase;
+      position: absolute;
+      top: 5px;
+    }
+  }
+
+  & img {
+    height: 25rem;
+  }
+}

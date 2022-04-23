@@ -1,27 +1,63 @@
 <template>
-  <header class="navbar bd-navbar navbar-expand-md navbar-dark">
-    <nav class="container flex-wrap flex-md-nowrap">
-      <router-link class="navbar-brand p-0 me-2" to="/">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94"
-             role="img"><title>Boilerplate</title>
-          <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                fill="currentColor"/>
-        </svg>
-      </router-link>
-      <router-link class="navbar-brand p-0 me-2" to="/">
-        Accueil
-      </router-link>
-       <router-link class="navbar-brand p-0 me-2" to="/apropos">
-        A propos
-      </router-link>
 
-       <router-link class="navbar-brand p-0 me-2" to="/panier">
-        Panier
-      </router-link>
-
-    </nav>
-  </header>
+  <div class="text-top container-fluid p-0">
+    <div class="bg-dark">
+      <p class="text-white text-center p-1 p-lg-2">besoin d'aide pour commander ? <br class="d-sm-none"> Appelez le :
+        <span class="text-orange"> <i class="fas fa-phone"></i> (+225) 07 08 86 37 19</span>
+      </p>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <!-- header -->
+    <div class="header">
+      <div class="row align-items-center">
+        <!-- logo -->
+        <div class="col-4 col-lg-3 mt-1 order-1">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png"
+                 onclick="window.location.href='/'"
+                 class="img-fluid order-1 order-lg-0" alt="">
+            <span class="order-0 order-lg-1" id="open-menu"><i class="fas fa-bars"></i></span>
+          </a>
+        </div>
+        <!-- formulaire de recherche -->
+        <div class="col order-3 order-lg-2">
+          <form action="" class="search">
+            <div class="input-group">
+              <input name="q" value="" type="text" placeholder="rechercher un livre">
+              <div class="input-group-append">
+                <button class="btn" type="submit">
+                  <i class="bi bi-search"></i>
+                  <span>Recherche</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--  -->
+        <div class="header-right order-2 order-lg-3 col-8 col-lg-4 text-right mt-3">
+          <div class="d-inline-flex">
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#">Accueil</a>
+              </li>
+              <li>
+                <a href="#" class="btn-card">
+                  A propos de
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="btn-card">
+                  <i class="bi bi-cart"></i>
+                  <span class="total">5</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import {defineComponent} from "vue";
